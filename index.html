@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>HTML5 Doctor | Element Index</title>
+<link rel="stylesheet" href="style.css" />
+
+</head>
+<body id="home">
+<h1>Zasoby</h1>
+<form>
+<table border="1">
+    <tr>
+        <td>on/off</td>
+        <td>link</td>
+        <td>akcja</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" checked/></td>
+        <td><input type="text" value="http://marketdino.pl/include/user_file/gazetka/items/content/dino.pdf"/></td>
+        <td><input value="usuń"/></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" checked/></td>
+        <td><input type="text" value="http://biedronka.pl/.../biedronka.pdf"/></td>
+        <td><input value="usuń"/></td>
+    </tr>
+</table>
+<input type="text" value="http://...pdf"/><input type="submit" value="dodaj nowy"/>
+</form>
+<h2>Analiza danych</h2>
+<table border="1">
+    <tr>
+        <td>Produkt</td>
+        <td>Dino [zł/kg]</td>
+        <td>Biedronka [zł/kg]</td>
+        <td>Akcja</td>
+    </tr>
+    <tr>
+        <td>Jabłka</td>
+        <td>4 [1]</td>
+        <td>4,50 [2]</td>
+        <td><input type="button" value="odśwież ⟲"/></td>
+    </tr>
+    <tr>
+        <td>Gruszki</td>
+        <td>4 [3]</td>
+        <td>4,50 [4]</td>
+        <td><input type="button" value="odśwież ⟲"/></td>
+    </tr>
+    <tr>
+        <td>Truskawki</td>
+        <td>6 [5]</td>
+        <td>5,90 [6]</td>
+        <td><input type="button" value="odśwież ⟲"/></td>
+    </tr>
+</table>
+
+<pre>
+[1] dino.pdf strona 2
+[2] biedronka.pdf strona 4
+[3] dino.pdf strona 6
+[4] biedronka.pdf strona 2
+[5] dino.pdf strona 10
+[6] biedronka.pdf strona 1
+</pre>
+
+<h2>Wizualizacja</h2>
+<svg class="chart" width="420" height="150" aria-labelledby="title desc" role="img">
+  <title id="title">Wykres porównujący ceny produktów w różnych sklepach</title>
+  <desc id="desc">jabłka, gruszki, truskawki, mango [zł/kg]</desc>
+  <g class="bar">
+    <rect width="40" height="19" fill="red" y="0"></rect>
+    <text x="45" y="6" dy=".35em">jabłka Biedronka</text>
+  </g>
+  <g class="bar">
+    <rect width="30" height="19" fill="blue" y="20"></rect>
+    <text x="35" y="29" dy=".35em">jabłka Dino</text>
+  </g>
+  <g class="bar">
+    <rect width="80" height="19" y="40"></rect>
+    <text x="85" y="48" dy=".35em">gruszki</text>
+  </g>
+  <g class="bar">
+    <rect width="150" height="19" y="60"></rect>
+    <text x="150" y="68" dy=".35em">truskawki</text>
+  </g>
+  <g class="bar">
+    <rect width="160" height="19" y="80"></rect>
+    <text x="161" y="88" dy=".35em">mango</text>
+  </g>
+</svg>
+</body>
+</html>
